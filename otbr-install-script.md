@@ -19,15 +19,11 @@ The whole process is also mentioned here,
 **This is totally optional if you are only going to program nRF dongles**
 
 ## This Process can be done on normal PC
- 1. To code/debug & program Thread module installation of nRF connect SDK is essential.
+ 1. To code/debug & program Thread modules(nrf52840 dongles) installation of nRF connect SDK is essential.
  2. There are two ways to do it.
-     i.  Automatic installation.
-     ii. Manual installation.
-            
-1. To program thread module installation of nRF connect SDK is essential. There are two ways to do it.
-#automatic installation
-#manual installation
-#let us proceed with automatic installation by following link
+     1. Automatic installation.
+     2. Manual installation.
+**let us proceed with automatic installation by following link**
 
 # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/getting_started/assistant.html#gs-assistant
 # Once the installation is complete then follow the above link for command line based build which will launch terminal
