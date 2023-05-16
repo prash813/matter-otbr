@@ -1,21 +1,10 @@
 # INSTALLING OTBR stack 
-## These steps need to be performed on RPi
+## These steps need to be performed on RPi.
+So install Ubuntu 22.04 or 23.04 on RPi and then copy install-otbr.sh on rpi and execute it as given below
+
 ```
-#!/bin/sh
-if [ $# -lt 1 ] then
-	echo "Usage:: $0 <wifi interface name like wlan0 on RPi>"
-	return
-fi	
-git clone https://github.com/openthread/ot-br-posix.git --depth 1
-##steps which are important for nRF dongle to run correctly with OTBR
-cd ot-br-posix
-git pull --unshallow
-git checkout a892bf7
-sync
-./script/bootstrap
-sync
-INFRA_IF_NAME=$1 ./script/setup
-sudo cp otbr-agent /etc/default/
+chmod +x install-otbr.sh
+./install-otbr.sh wlan0
 
 ```
 
