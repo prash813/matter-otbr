@@ -9,17 +9,22 @@ chmod +x install-otbr.sh
 ```
 
 The whole process is also mentioned here,
-[nstalling-otbr-manually-raspberry-pi](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/protocols/thread/tools.html#installing-otbr-manually-raspberry-pi)
+[installing-otbr-manually-raspberry-pi](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/protocols/thread/tools.html#installing-otbr-manually-raspberry-pi)
 
 
-#It is recommended to reboot the RPi once above steps are finished.
+**It is recommended to reboot the RPi once above steps are finished.**
 
-### INSTALLING nRF Connect SDK 
+# INSTALLING nRF Connect SDK 
 
-##This is totally optional
+**This is totally optional if you are only going to program nRF dongles**
 
-# This Process can be done on normal PC 
-#To program thread module installation of nRF connect SDK is essential. There are two ways to do it.
+## This Process can be done on normal PC
+ Markup : 1. To code/debug & program Thread module installation of nRF connect SDK is essential.
+          2. There are two ways to do it
+            i. automatic installation.
+            ii.manual installation.
+            
+1. To program thread module installation of nRF connect SDK is essential. There are two ways to do it.
 #automatic installation
 #manual installation
 #let us proceed with automatic installation by following link
