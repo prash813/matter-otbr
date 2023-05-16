@@ -23,10 +23,12 @@ The whole process is also mentioned here,
  2. There are two ways to do it.
      1. Automatic installation.
      2. Manual installation.
-**let us proceed with automatic installation by following link**
 
-# https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/getting_started/assistant.html#gs-assistant
-# Once the installation is complete then follow the above link for command line based build which will launch terminal
+**Let us proceed with automatic installation by following link**
+
+[nRF connect SDK installtion](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/getting_started/assistant.html#gs-assistant)
+
+Once the installation is complete then follow the above link for command line based build which will launch terminal.
 
 
 ### INSTALL THE TOOLS USED FOR PROGRAMMING THE DONGLE
