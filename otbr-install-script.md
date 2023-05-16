@@ -1,6 +1,7 @@
 # INSTALLING OTBR stack 
-#These steps need to be performed on RPi
-
+## These steps need to be performed on RPi
+```
+#!/bin/sh
 if [ $# -lt 1 ] then
 	echo "Usage:: $0 <wifi interface name like wlan0 on RPi>"
 	return
@@ -16,9 +17,10 @@ sync
 INFRA_IF_NAME=$1 ./script/setup
 sudo cp otbr-agent /etc/default/
 
+```
 
-#The whole process is also mentioned here,
-#https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/protocols/thread/tools.html#installing-otbr-manually-raspberry-pi
+The whole process is also mentioned here,
+[nstalling-otbr-manually-raspberry-pi](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/protocols/thread/tools.html#installing-otbr-manually-raspberry-pi)
 
 
 #It is recommended to reboot the RPi once above steps are finished.
