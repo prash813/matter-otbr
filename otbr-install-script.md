@@ -1,4 +1,4 @@
-###INSTALLING OTBR stack 
+# INSTALLING OTBR stack 
 #These steps need to be performed on RPi
 
 if [ $# -lt 1 ] then
