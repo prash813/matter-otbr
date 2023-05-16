@@ -1,0 +1,83 @@
+nrfutil dfu usb-serial -pkg blinky.zip -p /dev/ttyACM0
+  [------------------------------------]    0%
+Traceback (most recent call last):
+  File "nordicsemi/__main__.py", line 1555, in <module>
+  File "click/core.py", line 1137, in __call__
+  File "click/core.py", line 1062, in main
+  File "click/core.py", line 1668, in invoke
+  File "click/core.py", line 1668, in invoke
+  File "click/core.py", line 1404, in invoke
+  File "click/core.py", line 763, in invoke
+  File "nordicsemi/__main__.py", line 1032, in usb_serial
+  File "nordicsemi/__main__.py", line 988, in do_serial
+  File "nordicsemi/dfu/dfu.py", line 127, in dfu_send_images
+  File "nordicsemi/dfu/dfu.py", line 88, in _dfu_send_image
+  File "nordicsemi/dfu/dfu_transport_serial.py", line 216, in open
+  File "nordicsemi/dfu/dfu_transport_serial.py", line 360, in __set_prn
+  File "nordicsemi/dfu/dfu_transport_serial.py", line 491, in __get_response
+pc_ble_driver_py.exceptions.NordicSemiException: Unexpected Executed OP_CODE.
+Expected: 0x02 Received: 0x7E
+[1351107] Failed to execute script '__main__' due to unhandled exception!
+
+
+nrfutil dfu usb-serial -pkg /home/prashant/ncs/v2.3.0/nrf/samples/openthread/coprocessor/build/zephyr/zephyr.zip -p /dev/ttyACM0
+  [------------------------------------]    0%
+Traceback (most recent call last):
+  File "nordicsemi/__main__.py", line 1555, in <module>
+  File "click/core.py", line 1137, in __call__
+  File "click/core.py", line 1062, in main
+  File "click/core.py", line 1668, in invoke
+  File "click/core.py", line 1668, in invoke
+  File "click/core.py", line 1404, in invoke
+  File "click/core.py", line 763, in invoke
+  File "nordicsemi/__main__.py", line 1032, in usb_serial
+  File "nordicsemi/__main__.py", line 988, in do_serial
+  File "nordicsemi/dfu/dfu.py", line 127, in dfu_send_images
+  File "nordicsemi/dfu/dfu.py", line 88, in _dfu_send_image
+  File "nordicsemi/dfu/dfu_transport_serial.py", line 216, in open
+  File "nordicsemi/dfu/dfu_transport_serial.py", line 360, in __set_prn
+  File "nordicsemi/dfu/dfu_transport_serial.py", line 491, in __get_response
+pc_ble_driver_py.exceptions.NordicSemiException: Unexpected Executed OP_CODE.
+Expected: 0x02 Received: 0x7E
+[1385440] Failed to execute script '__main__' due to unhandled exception!
+prashant@prashant-Latitude-3420:~/ncs/v2.3.0/zephyr/samples/basic/blinky$ nrfutil dfu usb-serial -pkg /home/prashant/ncs/v2.3.0/nrf/samples/openthread/coprocessor/build/zephyr/zephyr.zip -p /dev/ttyACM0
+  [------------------------------------]    0%
+Traceback (most recent call last):
+  File "nordicsemi/__main__.py", line 1555, in <module>
+  File "click/core.py", line 1137, in __call__
+  File "click/core.py", line 1062, in main
+  File "click/core.py", line 1668, in invoke
+  File "click/core.py", line 1668, in invoke
+  File "click/core.py", line 1404, in invoke
+  File "click/core.py", line 763, in invoke
+  File "nordicsemi/__main__.py", line 1032, in usb_serial
+  File "nordicsemi/__main__.py", line 988, in do_serial
+  File "nordicsemi/dfu/dfu.py", line 127, in dfu_send_images
+  File "nordicsemi/dfu/dfu.py", line 88, in _dfu_send_image
+  File "nordicsemi/dfu/dfu_transport_serial.py", line 217, in open
+  File "nordicsemi/dfu/dfu_transport_serial.py", line 366, in __get_mtu
+TypeError: cannot convert 'NoneType' object to bytearray
+[1385547] Failed to execute script '__main__' due to unhandled exception!
+prashant@prashant-Latitude-3420:~/ncs/v2.3.0/zephyr/samples/basic/blinky$ nrfutil dfu usb-serial -pkg /home/prashant/ncs/v2.3.0/nrf/samples/openthread/coprocessor/build/zephyr/zephyr.zip -p /dev/ttyACM0
+  [------------------------------------]    0%
+Traceback (most recent call last):
+  File "nordicsemi/__main__.py", line 1555, in <module>
+  File "click/core.py", line 1137, in __call__
+  File "click/core.py", line 1062, in main
+  File "click/core.py", line 1668, in invoke
+  File "click/core.py", line 1668, in invoke
+  File "click/core.py", line 1404, in invoke
+  File "click/core.py", line 763, in invoke
+  File "nordicsemi/__main__.py", line 1032, in usb_serial
+  File "nordicsemi/__main__.py", line 988, in do_serial
+  File "nordicsemi/dfu/dfu.py", line 127, in dfu_send_images
+  File "nordicsemi/dfu/dfu.py", line 88, in _dfu_send_image
+  File "nordicsemi/dfu/dfu_transport_serial.py", line 216, in open
+  File "nordicsemi/dfu/dfu_transport_serial.py", line 360, in __set_prn
+  File "nordicsemi/dfu/dfu_transport_serial.py", line 491, in __get_response
+pc_ble_driver_py.exceptions.NordicSemiException: Unexpected Executed OP_CODE.
+Expected: 0x02 Received: 0x7E
+[1385706] Failed to execute script '__main__' due to unhandled exception!
+
+one way to resolve above kind of problems if they are occured on a PC with which above commands were successfully executed prevously, is somehow chage enumerated device from say ttyACMx to say ttyACMy
+
