@@ -19,10 +19,10 @@ The whole process is also mentioned here,
 **This is totally optional if you are only going to program nRF dongles**
 
 ## This Process can be done on normal PC
- Markup : 1. To code/debug & program Thread module installation of nRF connect SDK is essential.
-          2. There are two ways to do it
-            i. automatic installation.
-            ii.manual installation.
+ 1. To code/debug & program Thread module installation of nRF connect SDK is essential.
+ 2. There are two ways to do it
+   i. automatic installation.
+   ii.manual installation.
             
 1. To program thread module installation of nRF connect SDK is essential. There are two ways to do it.
 #automatic installation
