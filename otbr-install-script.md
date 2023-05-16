@@ -11,14 +11,16 @@ chmod +x install-otbr.sh
 The whole process is also mentioned here,
 [installing-otbr-manually-raspberry-pi](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/protocols/thread/tools.html#installing-otbr-manually-raspberry-pi)
 
-
 **It is recommended to reboot the RPi once above steps are finished.**
 
-# INSTALLING nRF Connect SDK 
+# Programming the nRF52840 Dongles
+**Note-: This Process can be done on normal PC**
+
+## INSTALLING nRF Connect SDK  
 
 **This is totally optional if you are only going to program nRF dongles**
 
-## This Process can be done on normal PC
+
  1. To code/debug & program Thread modules(nrf52840 dongles) installation of nRF connect SDK is essential.
  2. There are two ways to do it.
      1. Automatic installation.
@@ -26,30 +28,26 @@ The whole process is also mentioned here,
 
 **Let us proceed with automatic installation by following link**
 
-[nRF connect SDK installtion](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/getting_started/assistant.html#gs-assistant)
+[nRF connect SDK installation](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/getting_started/assistant.html#gs-assistant)
 
-Once the installation is complete then follow the above link for command line based build which will launch terminal.
+Once the installation is complete then follow the above link for command line based workflow for building and programming applications into nrf dongles.
+This will launch the terminal from where one can access nRF SDK commands.
 
-
-### INSTALL THE TOOLS USED FOR PROGRAMMING THE DONGLE
+## INSTALL THE TOOLS USED FOR PROGRAMMING THE DONGLE
 #The detailed instructions are given here 
 ## https://infocenter.nordicsemi.com/index.jsp?topic=%2Fug_nrfutil%2FUG%2Fnrfutil%2Fnrfutil_installing.html
 
-# 1. But in short install the debian package 
+ 1. But in short, just get the archive from this repo x86_tools.tar.gz and execute following commands,
 
-sudo dpkg -i nrf-command-line-tools_10.21.0_amd64.deb
+```
+tar -zxf x86_tools.tar.gz
+sudo dpkg -i x86_tools/nrf-command-line-tools_10.21.0_amd64.deb
+#please follow the instriuctions as printed on the terminal
+sudo cp nrfutil /usr/local/bin/
 
-# 2. Please follow the instructions as printed on the terminal
-
-# 3. Download the util nrfutil https://developer.nordicsemi.com/.pc-tools/nrfutil/x64-linux/nrfutil
-# 4. copy the downloaded file to the path as generated during "nRF Connect SDK" installation above
-
-cp nrfutil <home dir>/ncs/toolchains/v2.3.0/usr/local/bin/
-
-
-#The details about the dongle are given here.
-
-# https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/boards/arm/nrf52840dongle_nrf52840/doc/index.html#nrf52840dongle-nrf52840
+```
+***Note-:The details about the nRF52840 dongle are given here.***
+[nRF52840 dongle details](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/boards/arm/nrf52840dongle_nrf52840/doc/index.html#nrf52840dongle-nrf52840)
 
 #connect the nrf52840 dongle to usb port. extract the archive otbr-rcp-firmware.tar
 #reset the dongle till red LED start fading smoothly.
