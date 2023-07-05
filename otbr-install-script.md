@@ -26,7 +26,7 @@ The whole process is also mentioned here,
      1. Automatic installation.
      2. Manual installation.
 
-**Let us proceed with automatic installation by following link**
+**Let us proceed with automatic installation by following the link**
 
 [nRF connect SDK installation](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/getting_started/assistant.html#gs-assistant)
 
